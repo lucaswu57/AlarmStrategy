@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="116px"
+              android:background="@drawable/dl_item_bg_selector"
+              android:minHeight="56dp"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/dl_plugin_move"
+        android:layout_width="56dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:src="@drawable/dl_drag_selector"/>
+
+    <com.qihancloud.alarmstrategy.utils.diyview.RoundImageView
+        android:id="@+id/dl_plugin_icon"
+        android:layout_width="@dimen/add_num_icon_width"
+        android:layout_height="@dimen/add_num_icon_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="14dp"
+        imagecontrol:border_outside_color="@color/gray_light"
+        imagecontrol:border_thickness="2dp"/>
+
+    <TextView
+        android:id="@+id/dl_plugin_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/text_color_black"
+        android:textSize="@dimen/add_num_name_text_size"/>
+
+    <Button
+        android:id="@+id/dl_plugin_state"
+        android:layout_width="@dimen/add_num_btn_width"
+        android:layout_height="@dimen/add_num_btn_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/add_num_btn_margin"
+        android:layout_marginBottom="@dimen/add_num_btn_margin"
+        android:background="@drawable/shape_round_white_homepage"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/alarm_notify_added"
+        android:textColor="@color/home_page_edit_textcolor_untriggered"
+        android:textSize="@dimen/add_num_name_text_size"/>
+</LinearLayout>

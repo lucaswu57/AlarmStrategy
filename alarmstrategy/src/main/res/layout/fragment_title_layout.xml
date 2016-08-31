@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background">
+
+
+    <FrameLayout
+        android:id="@+id/title_navigationbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_navi_background0">
+
+        <Button
+            android:id="@+id/title_left_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="@drawable/button_back_selector" />
+
+        <TextView
+            android:id="@+id/title_center_title"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/Login"
+            android:textColor="@drawable/configuration_item_text_selector"
+            android:textSize="@dimen/common_textsize_middle" />
+
+        <Button
+            android:id="@+id/title_right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/button_back_selector" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

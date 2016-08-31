@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dialog_text_color">#ff666666</color>
+    <color name="dialog_title_text_color">#666666</color>
+    <color name="dialog_divide_color">#ffd2d2d2</color>
+
+
+    <color name="top_bar_bg">#61a4d8</color>
+</resources>

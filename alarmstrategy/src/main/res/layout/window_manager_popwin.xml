@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_round_btn_transparent_50"
+    android:gravity="center">
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="200dp"
+        android:layout_height="220dp"
+        android:gravity="center"
+        android:text="@string/alarm_updating1"
+        android:textColor="@color/red"
+        android:textSize="@dimen/common_textsize_big" />
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/title"
+        android:gravity="center"
+        android:text="@string/alarm_updating"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_textsize_large" />
+
+    <!--<RelativeLayout
+        android:id="@+id/popup_window"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_window_height"
+        android:background="@color/white"
+        android:orientation="vertical" >
+        
+        
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_title_height"
+            android:gravity="center"
+            android:text="@string/default_title"
+            android:textColor="@color/dialog_title_text_color"
+            android:textSize="@dimen/dialog_title_text_size" />
+
+        <View
+            android:id="@+id/title_divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/title"
+            android:background="@drawable/dialog_title_divider" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_divider"
+            android:gravity="center"
+            android:padding="@dimen/dialog_content_padding_side"
+            android:text="@string/default_content"
+            android:textColor="@color/dialog_content_text_color"
+            android:textSize="@dimen/dialog_content_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dialog_content_padding_bottom"
+            android:paddingLeft="@dimen/dialog_content_padding_side"
+            android:paddingRight="@dimen/dialog_content_padding_side" >
+
+            <Button
+                android:id="@+id/negativeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/promote_window_negative_btn_selector"
+                android:focusable="true"
+                android:padding="@dimen/dialog_button_padding"
+                android:text="@string/default_btn_cancel"
+                android:textColor="@color/dialog_negative_btn_text_color"
+                android:textSize="@dimen/dialog_button_text_size" />
+
+            <Button
+                android:id="@+id/positiveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                android:background="@drawable/promote_window_positive_btn_selector"
+                android:focusable="true"
+                android:padding="@dimen/dialog_button_padding"
+                android:text="@string/default_btn_ok"
+                android:textColor="@color/dialog_positive_btn_text_color"
+                android:textSize="@dimen/dialog_button_text_size" />
+        </LinearLayout>
+    </RelativeLayout>-->
+
+</RelativeLayout>

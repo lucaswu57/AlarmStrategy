@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="116px"
+              android:background="@drawable/dl_item_bg_selector"
+              android:gravity="center_vertical"
+              android:minHeight="56dp"
+              android:orientation="horizontal">
+
+
+    <com.qihancloud.alarmstrategy.utils.diyview.RoundImageView
+        android:id="@+id/dl_plugin_icon"
+        android:layout_width="@dimen/add_num_icon_width"
+        android:layout_height="@dimen/add_num_icon_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="14dp"
+        imagecontrol:border_outside_color="@color/gray_light"
+        imagecontrol:border_thickness="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dl_plugin_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="name"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/add_num_name_text_size"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dl_plugin_state"
+        android:layout_width="@dimen/add_num_btn_width"
+        android:layout_height="@dimen/add_num_btn_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/add_num_btn_margin"
+        android:layout_marginBottom="@dimen/add_num_btn_margin"
+        android:background="@drawable/shape_round_blue_homepage"
+        android:text="@string/alarm_notify_add"
+        android:textColor="@color/home_page_edit_textcolor"
+        android:textSize="@dimen/add_num_name_text_size"/>
+</LinearLayout>

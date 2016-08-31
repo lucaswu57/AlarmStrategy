@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="com.qihancloud.alarmstrategy.SafeHomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/stranger_layout"
+        android:layout_width="@dimen/home_page_mode_bg_width"
+        android:layout_height="@dimen/home_page_mode_bg_height"
+        android:layout_marginTop="@dimen/home_page_mode_margin_top"
+        android:background="@drawable/shape_round_white"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/stranger_icon"
+            android:layout_width="@dimen/home_page_image_width"
+            android:layout_height="@dimen/home_page_image_height"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/stranger_untriggered_icon"/>
+        <TextView
+            android:id="@+id/stranger_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_page_name_margin_top"
+            android:layout_marginBottom="@dimen/home_page_name_margin_bottom"
+            android:text="@string/stranger_strategy"
+            android:textSize="@dimen/home_page_name_textsize"
+            android:textColor="@color/home_page_name_textcolor_untriggered"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/stranger_icon"/>
+
+        <ToggleButton
+            android:id="@+id/stranger_switch"
+            android:layout_width="@dimen/home_page_toggole_width"
+            android:layout_height="@dimen/home_page_toggole_height"
+            android:layout_below="@+id/stranger_name"
+            android:background="@drawable/toggle_btn_home"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            />
+
+        <Button
+            android:id="@+id/stranger_edit"
+            android:layout_width="@dimen/home_page_edit_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_page_edit_margin_top"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/stranger_switch"
+            android:background="@drawable/homepage_edit_btn"
+            android:text="@string/safe_home_edit"
+            android:textSize="@dimen/home_page_edit_textsize"
+            android:textColor="@drawable/textcolor_enable_gray_blue"
+            android:enabled="false"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/alarm_layout"
+        android:layout_width="@dimen/home_page_mode_bg_width"
+        android:layout_height="@dimen/home_page_mode_bg_height"
+        android:layout_marginTop="@dimen/home_page_mode_margin_top"
+        android:layout_toRightOf="@+id/stranger_layout"
+        android:layout_marginLeft="@dimen/home_page_mode_margin_left"
+        android:background="@drawable/shape_round_white"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/alarm_icon"
+            android:layout_width="@dimen/home_page_image_width"
+            android:layout_height="@dimen/home_page_image_height"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/arm_untriggered_icon"/>
+        <TextView
+            android:id="@+id/alarm_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_page_name_margin_top"
+            android:layout_marginBottom="@dimen/home_page_name_margin_bottom"
+            android:text="@string/alalrm_strategy"
+            android:textSize="@dimen/home_page_name_textsize"
+            android:textColor="@color/home_page_name_textcolor_untriggered"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/alarm_icon"/>
+
+        <ToggleButton
+            android:id="@+id/alarm_switch"
+            android:layout_width="@dimen/home_page_toggole_width"
+            android:layout_height="@dimen/home_page_toggole_height"
+            android:layout_below="@+id/alarm_name"
+            android:background="@drawable/toggle_btn_home"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            />
+
+        <Button
+            android:id="@+id/alarm_edit"
+            android:layout_width="@dimen/home_page_edit_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_page_edit_margin_top"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/alarm_switch"
+            android:background="@drawable/homepage_edit_btn"
+            android:text="@string/safe_home_edit"
+            android:textSize="@dimen/home_page_edit_textsize"
+            android:textColor="@drawable/textcolor_enable_gray_blue"
+            android:enabled="false"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/emergency_layout"
+        android:layout_width="@dimen/home_page_mode_bg_width"
+        android:layout_height="@dimen/home_page_mode_bg_height"
+        android:layout_marginTop="@dimen/home_page_mode_margin_top"
+        android:layout_toRightOf="@+id/alarm_layout"
+        android:layout_marginLeft="@dimen/home_page_mode_margin_left"
+        android:background="@drawable/shape_round_white"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/emergency_icon"
+            android:layout_width="@dimen/home_page_image_width"
+            android:layout_height="@dimen/home_page_image_height"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/emergency_untriggered_icon"/>
+        <TextView
+            android:id="@+id/emergency_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_page_name_margin_top"
+            android:layout_marginBottom="@dimen/home_page_name_margin_bottom"
+            android:text="@string/emergency_strategy"
+            android:textSize="@dimen/home_page_name_textsize"
+            android:textColor="@color/home_page_name_textcolor_untriggered"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/emergency_icon"/>
+
+        <ToggleButton
+            android:id="@+id/emergency_switch"
+            android:layout_width="@dimen/home_page_toggole_width"
+            android:layout_height="@dimen/home_page_toggole_height"
+            android:layout_below="@+id/emergency_name"
+            android:background="@drawable/toggle_btn_home"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            />
+
+        <Button
+            android:id="@+id/emergency_edit"
+            android:layout_width="@dimen/home_page_edit_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_page_edit_margin_top"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/emergency_switch"
+            android:background="@drawable/homepage_edit_btn"
+            android:text="@string/safe_home_edit"
+            android:textSize="@dimen/home_page_edit_textsize"
+            android:textColor="@drawable/textcolor_enable_gray_blue"
+            android:enabled="false"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

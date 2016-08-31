@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="1dip"
+    android:layout_marginTop="1dip"
+    android:background="@color/alarm_background" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <!--<ImageView
+            android:id="@+id/remote_video_img"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/background" />-->
+
+        <SurfaceView
+            android:id="@+id/show_video_surface"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <com.qihancloud.alarmstrategy.alarm.DrawView
+            android:id="@+id/remote_video_canvas"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="0.5dip"
+            android:layout_marginLeft="0.5dip"
+            android:layout_marginRight="0.5dip"
+            android:layout_marginTop="0.5dip" />
+
+        <ProgressBar
+            android:id="@+id/remote_alarm_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@anim/progress_anim"
+            android:indeterminateDuration="1500"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/left_side_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left_icon"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/right_side_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/right_icon"
+            android:visibility="gone"/>
+        <ProgressBar
+            android:id="@+id/remote_alarm_progressbar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@anim/progress_anim"
+            android:indeterminateDuration="1500"
+            android:visibility="gone" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/remote_fanc_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/alarm_FuncBtnLayout_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent_background"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!--<Button
+            android:id="@+id/remote_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent_bg"
+            android:text="@string/alarm_btn_back"
+            android:textSize="@dimen/common_textsize_big"
+            android:textColor="@drawable/bg_alarm_text_selector"
+            android:contentDescription="@string/nothing" />-->
+        <Button
+            android:id="@+id/remote_clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent_bg"
+            android:text="@string/alarm_btn_reset"
+            android:textSize="@dimen/common_textsize_big"
+            android:textColor="@drawable/bg_alarm_text_selector"
+            android:contentDescription="@string/nothing" />
+
+        <Button
+            android:id="@+id/both_side"
+            android:layout_marginLeft="50dp"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_round_btn_transparent"
+            android:text="@string/alarm_btn_both_side"
+            android:textSize="@dimen/common_textsize_big"
+            android:textColor="@drawable/bg_alarm_text_selector"
+            android:contentDescription="@string/nothing" />
+
+        <Button
+            android:id="@+id/left_side"
+            android:layout_marginLeft="20dp"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_round_btn_transparent"
+            android:text="@string/alarm_btn_left_side"
+            android:textSize="@dimen/common_textsize_big"
+            android:textColor="@drawable/bg_alarm_text_selector"
+            android:contentDescription="@string/nothing" />
+
+        <Button
+            android:id="@+id/right_side"
+            android:layout_marginLeft="20dp"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_round_btn_transparent"
+            android:text="@string/alarm_btn_right_side"
+            android:textSize="@dimen/common_textsize_big"
+            android:textColor="@drawable/bg_alarm_text_selector"
+            android:contentDescription="@string/nothing" />
+
+
+
+
+        <Button
+            android:id="@+id/remote_save_button"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent_bg"
+            android:text="@string/alarm_btn_open"
+            android:textSize="@dimen/common_textsize_big"
+            android:textColor="@drawable/bg_alarm_text_selector"
+            android:contentDescription="@string/nothing" />
+
+        <!--<ImageView
+            android:id="@+id/remote_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:background="@drawable/button_alarmcancel_selector"
+            android:contentDescription="@string/nothing" />
+
+        <ImageView
+            android:id="@+id/remote_clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:background="@drawable/button_alarmclear_selector"
+            android:contentDescription="@string/nothing" />
+
+        <ImageView
+            android:id="@+id/remote_save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:background="@drawable/button_alarmsave_selector"
+            android:contentDescription="@string/nothing" />-->
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

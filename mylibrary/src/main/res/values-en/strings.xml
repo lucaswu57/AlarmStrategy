@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">mylibrary</string>
+    <string name="dialog_button_cancel">Cancel</string>
+    <string name="dialog_button_confir">Confirm</string>
+    <string name="dialog_button_save">save</string>
+    <string name="logo_text2"></string>
+    <string name="AM">AM</string>
+    <string name="PM">PM</string>
+    <string name="error">error</string>
+</resources>

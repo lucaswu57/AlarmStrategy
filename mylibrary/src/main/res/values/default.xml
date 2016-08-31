@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="switch_btn_thumb_width">20dp</dimen>
+    <dimen name="switch_btn_thumb_height">20dp</dimen>
+    <dimen name="switch_btn_width">50dp</dimen>
+
+    <dimen name="dialog_btn_margin_top">10dp</dimen>
+     <!--弹出框按钮高度-->
+    <dimen name="dialog_btn_height">45dp</dimen>
+    <dimen name="dialog_list_item_height">45dp</dimen>
+    <dimen name="dialog_btn_text_size">18sp</dimen>
+    <!--弹出框长度-->
+    <dimen name="dialog_width">400dp</dimen>
+    <dimen name="dialog_check_icon_size">25dp</dimen>
+    <dimen name="dialog_item_text_size">18sp</dimen>
+    <dimen name="dialog_btn_space">1dp</dimen>
+
+    <dimen name="dialog_button_height">45dp</dimen>
+    <dimen name="dialog_text_size1">22sp</dimen>
+    <dimen name="dialog_text_size2">18sp</dimen>
+    <dimen name="dialog_text_size3">16sp</dimen>
+    <dimen name="dialog_button_margin_top">10dp</dimen>
+    <dimen name="dialog_button_space">2dp</dimen>
+    <dimen name="dialog_icon_size1">25dp</dimen>
+
+    <dimen name="load_dialog_icon_width">100dp</dimen>
+    <dimen name="load_dialog_icon_height">100dp</dimen>
+
+    <dimen name="divide_height">1px</dimen>
+
+</resources>

@@ -1,0 +1,122 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">50dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="common_textsize_large_45">45.0sp</dimen>
+    <dimen name="common_textsize_large">30.0sp</dimen>
+    <dimen name="common_textsize_big">25.0sp</dimen>
+    <dimen name="common_textsize_middle">20.0sp</dimen>
+    <dimen name="common_textsize_small">18.0sp</dimen>
+    <dimen name="common_textsize_small_least">16.0sp</dimen>
+    <dimen name="common_textsize_small_14sp">14.0sp</dimen>
+    <dimen name="common_textsize_small_most_least">12.0sp</dimen>
+
+
+    <dimen name="common_listview_item_height">45.0dip</dimen>
+    <dimen name="activity_top_margin">30dip</dimen>
+    <dimen name="activity_center_margin">20dip</dimen>
+    <dimen name="activity_left_margin">25dip</dimen>
+    <dimen name="activity_right_margin">25dip</dimen>
+    <dimen name="activity_item_height">45dip</dimen>
+
+
+    <dimen name="activity_big_button_height">150dp</dimen>
+    <dimen name="activity_middle_button_height">150dp</dimen>
+    <dimen name="activity_little_button_height">100dp</dimen>
+    <dimen name="activity_small_button_height">70dp</dimen>
+    <dimen name="activity_small_button_height_40">40dp</dimen>
+
+    <dimen name="activity_small_button_width">100dp</dimen>
+
+    <dimen name="activity_sub_left_margin">30dip</dimen>
+    <dimen name="activity_sub_right_margin">30dip</dimen>
+
+    <dimen name="activity_title_height">60dip</dimen>
+    <dimen name="activity_bottom_height">20dip</dimen>
+
+    <!--布防策略中line-->
+    <dimen name="activity_list_height">100px</dimen>
+    <dimen name="activity_list_height_child">45dp</dimen>
+
+    <dimen name="activity_line_toleft">50dp</dimen>
+    <dimen name="activity_line_toright">50dp</dimen>
+    <dimen name="activity_line_height">0.5dp</dimen>
+
+    <dimen name="alarm_togglebtn_height">40dp</dimen>
+    <dimen name="alarm_togglebtn_width">80dp</dimen>
+
+    <dimen name="alarm_notify_height">150dp</dimen>
+    <dimen name="alarm_notify_textview_toleft">10dp</dimen>
+    <dimen name="alarm_notify_textview_bottom_toleft">30dp</dimen>
+
+    <dimen name="alarm_finish_btn_height">70dp</dimen>
+    <dimen name="alarm_finish_btn_width">200dp</dimen>
+
+    <dimen name="alarm_FuncBtnLayout_height">120dp</dimen>
+
+    <dimen name="alarm_record_textsize">200dp</dimen>
+    <dimen name="alarm_record_btn_width">200dp</dimen>
+    <dimen name="alarm_record_btn_height">54px</dimen>
+    <dimen name="alarm_record_btn_textsize">36px</dimen>
+    <dimen name="alarm_record_btn_cloud">220px</dimen>
+
+    <!--home page-->
+    <dimen name="home_page_mode_bg_height">760px</dimen>
+    <dimen name="home_page_mode_bg_width">520px</dimen>
+    <dimen name="home_page_mode_margin_left">46px</dimen>
+    <dimen name="home_page_mode_margin_top">100px</dimen>
+
+    <dimen name="home_page_image_width">200px</dimen>
+    <dimen name="home_page_image_height">200px</dimen>
+
+    <dimen name="home_page_name_margin_top">78px</dimen>
+    <dimen name="home_page_name_margin_bottom">88px</dimen>
+    <dimen name="home_page_name_textsize">45px</dimen>
+
+    <dimen name="home_page_toggole_width">250px</dimen>
+    <dimen name="home_page_toggole_height">90px</dimen>
+
+    <dimen name="home_page_edit_width">250px</dimen>
+    <dimen name="home_page_edit_height">90px</dimen>
+    <dimen name="home_page_edit_margin_top">32px</dimen>
+    <dimen name="home_page_edit_margin_bottom">89px</dimen>
+    <dimen name="home_page_edit_textsize">46px</dimen>
+
+    <!--comm settings-->
+    <!--添加家庭成员-->
+    <dimen name="add_num_name_text_size">40px</dimen>
+    <dimen name="add_num_btn_margin">28px</dimen>
+    <dimen name="add_num_layout_margin">100px</dimen>
+    <dimen name="add_num_btn_width">180px</dimen>
+    <dimen name="add_num_btn_height">70px</dimen>
+    <dimen name="add_num_icon_width">86px</dimen>
+    <dimen name="add_num_icon_height">86px</dimen>
+
+
+    <!--alarm strategy config-->
+    <dimen name="alarm_strategy_config_parent_padding_left">200px</dimen>
+    <dimen name="alarm_strategy_config_parent_padding_right">200px</dimen>
+    <dimen name="alarm_strategy_config_parent_padding_top">30px</dimen>
+    <dimen name="alarm_strategy_config_parent_padding_bottom">15px</dimen>
+
+
+    <!--stranger strategy config -->
+    <dimen name="stranger_scroll_margin_bottom">200dp</dimen>
+    <dimen name="stranger_conform_btn_margin_bottom">50dp</dimen>
+
+    <!--emergency strategy config -->
+    <dimen name="emergency_devices_titlesize">36px</dimen>
+    <dimen name="emergency_divices_layout_margin_left">100px</dimen>
+    <dimen name="emergency_divices_layout_margin_top">12px</dimen>
+    <dimen name="emergency_divices_layout_margin_right">200px</dimen>
+    <dimen name="emergency_divices_layout_margin_bottom">0px</dimen>
+
+    <dimen name="emergency_divices_item_name_textsize">40px</dimen>
+    <dimen name="emergency_divices_item_switch_textsize">36px</dimen>
+    <dimen name="emergency_divices_item_switch_height">70px</dimen>
+    <dimen name="emergency_divices_item_switch_width">200px</dimen>
+
+
+</resources>

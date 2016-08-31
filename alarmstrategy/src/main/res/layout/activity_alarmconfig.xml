@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/alarm_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/alarm_background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.qihancloud.alarmstrategy.alarm.AlarmModeActivity">
+
+    <LinearLayout
+        android:id="@+id/alarm_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_line_toleft"
+        android:layout_marginRight="@dimen/activity_line_toright"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/device_invasion_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/activity_big_button_height"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/invasion_image"
+                android:layout_width="@dimen/activity_little_button_height"
+                android:layout_height="@dimen/activity_little_button_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_alarm_invasion" />
+
+            <TextView
+                android:id="@+id/invasion_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/invasion_image"
+                android:layout_centerHorizontal="true"
+                android:text="@string/InvasionMode"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_textsize_middle" />
+
+            <TextView
+                android:id="@+id/invasion_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/invasion_type"
+                android:layout_centerHorizontal="true"
+                android:text="@string/setting_no"
+                android:textColor="@color/gray_light"
+                android:textSize="@dimen/common_textsize_small" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/device_guard_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/activity_big_button_height"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/guard_image"
+                android:layout_width="@dimen/activity_little_button_height"
+                android:layout_height="@dimen/activity_little_button_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_round_shape" />
+
+            <TextView
+                android:id="@+id/guard_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/guard_image"
+                android:layout_centerHorizontal="true"
+                android:text="@string/GuardMode"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_textsize_middle" />
+
+            <TextView
+                android:id="@+id/guard_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/guard_type"
+                android:layout_centerHorizontal="true"
+                android:text="@string/setting_no"
+                android:textColor="@color/cornflowerblue"
+                android:textSize="@dimen/common_textsize_small" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/device_broder_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/activity_big_button_height"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/broder_image"
+                android:layout_width="@dimen/activity_little_button_height"
+                android:layout_height="@dimen/activity_little_button_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_alarm_transboundary_icon" />
+
+            <TextView
+                android:id="@+id/broder_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/broder_image"
+                android:layout_centerHorizontal="true"
+                android:text="@string/BroderMode"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_textsize_middle" />
+
+            <TextView
+                android:id="@+id/broder_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/broder_type"
+                android:layout_centerHorizontal="true"
+                android:text="@string/setting_no"
+                android:textColor="@color/gray_light"
+                android:textSize="@dimen/common_textsize_small" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/device_cover_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/activity_big_button_height"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/cover_image"
+                android:layout_width="@dimen/activity_little_button_height"
+                android:layout_height="@dimen/activity_little_button_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_alarm_shelter_icon" />
+
+            <TextView
+                android:id="@+id/cover_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cover_image"
+                android:layout_centerHorizontal="true"
+                android:text="@string/CoverMode"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_textsize_middle" />
+
+            <TextView
+                android:id="@+id/cover_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cover_type"
+                android:layout_centerHorizontal="true"
+                android:text="@string/setting_no"
+                android:textColor="@color/gray_light"
+                android:textSize="@dimen/common_textsize_small" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/alarm_layout"
+        android:layout_marginLeft="@dimen/activity_line_toleft"
+        android:layout_marginRight="@dimen/activity_line_toright"
+        android:layout_marginBottom="70dp"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/other_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_list_height"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/alarm_notify"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_textsize_middle" />
+
+                <ToggleButton
+                    android:id="@+id/alarm_notify_toggle"
+                    android:layout_width="@dimen/alarm_togglebtn_width"
+                    android:layout_height="@dimen/alarm_togglebtn_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/toggle_btn"
+                    android:checked="false"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray_light"></TextView>
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/alarm_notify_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/alarm_notify_text_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/alarm_notify_textview_toleft"
+                    android:text="@string/alarm_notify_text_top"
+                    android:textColor="@color/gray_light"
+                    android:textSize="@dimen/common_textsize_small" />
+
+
+                <GridView
+                    android:id="@+id/alarm_notify_gridview"
+                    android:listSelector="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numColumns="8"
+                    android:layout_below="@id/alarm_notify_text_top"
+                    android:layout_marginLeft="@dimen/alarm_notify_textview_bottom_toleft">
+                </GridView>
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/alarm_notify_gridview"
+                    android:layout_marginLeft="@dimen/alarm_notify_textview_bottom_toleft"
+                    android:text="@string/alarm_notify_text_bottom"
+                    android:textColor="@color/gray_light"
+                    android:textSize="@dimen/common_textsize_small" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray_light"></TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/photo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_list_height"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/alarm_take_photo"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_textsize_middle" />
+
+                <Button
+                    android:id="@+id/alarm_photo_cloud"
+                    android:layout_width="@dimen/alarm_record_btn_cloud"
+                    android:layout_height="@dimen/activity_small_button_height_40"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_round_btn_white"
+                    android:text="@string/alarm_cloud"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/alarm_record_btn_textsize"/>
+
+                <Button
+                    android:id="@+id/alarm_photo_local"
+                    android:layout_width="@dimen/activity_small_button_width"
+                    android:layout_height="@dimen/activity_small_button_height_40"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/alarm_photo_cloud"
+                    android:background="@drawable/bg_round_btn_white"
+                    android:text="@string/alarm_local"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/alarm_record_btn_textsize"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray_light"></TextView>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_list_height"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/alarm_record"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_textsize_middle" />
+
+
+                <Button
+                    android:id="@+id/alarm_record_cloud"
+                    android:layout_width="@dimen/alarm_record_btn_cloud"
+                    android:layout_height="@dimen/activity_small_button_height_40"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_round_btn_white"
+                    android:text="@string/alarm_cloud"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/alarm_record_btn_textsize"/>
+
+                <Button
+                    android:id="@+id/alarm_record_local"
+                    android:layout_width="@dimen/activity_small_button_width"
+                    android:layout_height="@dimen/activity_small_button_height_40"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/alarm_record_cloud"
+                    android:background="@drawable/bg_round_btn_white"
+                    android:text="@string/alarm_local"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/alarm_record_btn_textsize"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray_light"></TextView>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_list_height">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/alarm_whistle"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_textsize_middle" />
+
+                <ToggleButton
+                    android:id="@+id/alarm_whistle_toggle"
+                    android:layout_width="@dimen/alarm_togglebtn_width"
+                    android:layout_height="@dimen/alarm_togglebtn_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/toggle_btn"
+                    android:checked="false"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray_light"></TextView>
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/alarm_whistle_choose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/alarm_whistle_choose_defalut"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_list_height_child"
+                    >
+
+                    <TextView
+                        android:id="@+id/alarm_whistle_choose_defalut_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/alarm_whistle_choose_defalut"
+                        android:textColor="@color/gray_light"
+                        android:textSize="@dimen/common_textsize_middle" />
+                    <ImageView
+                        android:id="@+id/alarm_whistle_choose_defalut_check"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/btn_select"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_line_height"
+                    android:background="@color/gray_light"></TextView>
+
+                <RelativeLayout
+                    android:id="@+id/alarm_whistle_choose_wave"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_list_height_child">
+
+                    <TextView
+                        android:id="@+id/alarm_whistle_choose_wave_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/alarm_whistle_choose_wave"
+                        android:textColor="@color/gray_light"
+                        android:textSize="@dimen/common_textsize_middle" />
+                    <ImageView
+                        android:id="@+id/alarm_whistle_choose_wave_check"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/btn_select"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_line_height"
+                    android:background="@color/gray_light"></TextView>
+
+                <RelativeLayout
+                    android:id="@+id/alarm_whistle_choose_river"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_list_height_child">
+
+                    <TextView
+                        android:id="@+id/alarm_whistle_choose_river_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/alarm_whistle_choose_river"
+                        android:textColor="@color/gray_light"
+                        android:textSize="@dimen/common_textsize_middle" />
+                    <ImageView
+                        android:id="@+id/alarm_whistle_choose_river_check"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/btn_select"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_line_height"
+                    android:background="@color/gray_light"></TextView>
+
+                <RelativeLayout
+                    android:id="@+id/alarm_whistle_choose_local"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_list_height_child"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/alarm_whistle_choose_local_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/alarm_whistle_choose_local"
+                        android:textColor="@color/deepskyblue"
+                        android:textSize="@dimen/common_textsize_middle" />
+                    <ImageView
+                        android:id="@+id/alarm_whistle_choose_local_check"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/bg_listcell_shrinked"/>
+                    <TextView
+                        android:id="@+id/alarm_whistle_choose_local_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="50dp"
+                        android:textColor="@color/gray_light"
+                        android:textSize="@dimen/common_textsize_middle" />
+                </RelativeLayout>
+
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_line_height"
+                    android:background="@color/gray_light"></TextView>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/confirm_btn"
+        android:layout_width="@dimen/alarm_finish_btn_width"
+        android:layout_height="@dimen/alarm_finish_btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_round_btn"
+        android:text="@string/alarm_finish_btn"
+        android:textSize="@dimen/common_textsize_big" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/update_btn"
+        android:layout_width="@dimen/alarm_finish_btn_width"
+        android:layout_height="@dimen/alarm_finish_btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/record_stop"
+        android:background="@drawable/bg_round_btn"
+        android:textSize="@dimen/common_textsize_big" />
+    <Button
+        android:visibility="gone"
+        android:id="@+id/start_record"
+        android:layout_width="@dimen/alarm_finish_btn_width"
+        android:layout_height="@dimen/alarm_finish_btn_height"
+        android:layout_alignParentBottom="true"
+        android:text="@string/record_start"
+        android:background="@drawable/bg_round_btn"
+        android:textSize="@dimen/common_textsize_big" />
+    <Button
+        android:visibility="gone"
+        android:id="@+id/start_record_photo"
+        android:layout_width="@dimen/alarm_finish_btn_width"
+        android:layout_height="@dimen/alarm_finish_btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/start_record"
+        android:text="@string/record_photo"
+        android:background="@drawable/bg_round_btn"
+        android:textSize="@dimen/common_textsize_big" />
+
+</RelativeLayout>

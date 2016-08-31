@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/home_page_edit_textcolor" android:state_enabled="true" />
+    <item android:color="@color/home_page_edit_textcolor_untriggered" android:state_enabled="false" />
+</selector>

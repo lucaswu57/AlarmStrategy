@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@color/transparent">
+
+    <ImageView
+        android:id="@+id/popupwin_box_line_controls"
+        android:layout_width="1000dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/popwin_broder"
+        />
+    <TextView
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/alarm_btn_left_side"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="700dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/alarm_btn_both_side"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="900dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/alarm_btn_right_side"
+        android:textSize="20sp"/>
+
+
+    <Button
+        android:id="@+id/popupwin_confirm_btn"
+        android:layout_marginTop="50dp"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:background="@drawable/popwin_line_btn"
+        android:layout_below="@+id/popupwin_box_line_controls"
+        android:text="@string/alarm_popupwin_iknow"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Safety Home</string>
+	<string name="safe_home">Safety Home</string>
+	<string name="alalrm_strategy">Defence strategy</string>
+	<string name="stranger_strategy">Stranger strategy</string>
+	<string name="emergency_strategy">Emergency strategy</string>
+	<string name="safe_home_edit">Edit</string>
+	<string name="nothing"></string>
+	<string name="Login">login</string>
+	<string name="home_page_continued">Under Construction...</string>
+	<string name="record_start">start record...</string>
+	<string name="record_stop">end record...</string>
+	<string name="record_photo">start take photo</string>
+	<string name="add_members">Add members</string>
+
+	<string name="stranger_alarm">The stranger to enter！</string>
+
+	<string name="AlarmSetting">Defence settings</string>
+	<string name="InvasionMode">Invade</string>
+	<string name="GuardMode">Guard</string>
+	<string name="BroderMode">Cross</string>
+	<string name="FocusMode">Defocus</string>
+	<string name="CoverMode">Cover</string>
+	<string name="NotCompleted">Not completed</string>
+	<string name="NotDraw">Not draw</string>
+	<string name="InvalidPoint">Invalid Point</string>
+	<string name="OpenCoverAlarm">Open</string>
+	<string name="CloseCoverAlarm">Close</string>
+	<string name="alarm_confirm_tip">The setting do not save ,confirm to save?</string>
+	<string name="setting_no">Not set</string>
+	<string name="setting_already">Complete set</string>
+	<string name="setting_open">On</string>
+	<string name="setting_off">Off</string>
+	<string name="alarm_notify">Call family member video telephone </string>
+	<string name="alarm_take_photo">Take photo</string>
+	<string name="alarm_record">Record</string>
+	<string name="alarm_whistle">Alarm</string>
+	<string name="alarm_updating">Updating。。。</string>
+
+	<string name="alarm_updating1">Camera is upgrading,stop using part of function,ensure upgrade is normal,do not power off!</string>
+	<string name="alarm_update_fail">Update failed</string>
+	<string name="alarm_update_success">Update succeed</string>
+	<string name="alarm_notify_text_top">Please add members</string>
+	<string name="alarm_notify_text_bottom">Notice: a stranger into your home</string>
+	<string name="alarm_notify_gridview_textview">Father</string>
+	<string name="alarm_notify_add">Add</string>
+	<string name="alarm_notify_added">Added</string>
+	<string name="alarm_notify_not_add">Not add</string>
+
+	<string name="alarm_whistle_choose_defalut">Default</string>
+	<string name="alarm_whistle_choose_wave">Alarm1</string>
+	<string name="alarm_whistle_choose_river">Alarm2</string>
+	<string name="alarm_whistle_choose_local">Choose from local music</string>
+	<string name="alarm_whistle_choose_local_list">Local music list</string>
+	<string name="alarm_whistle_choose_local_list_not_music">Local have not music!</string>
+	<string name="alarm_local">Local</string>
+	<string name="alarm_cloud">Cloud server</string>
+	<string name="alarm_finish_btn">Finish</string>
+	<string name="alarm_btn_open">Open</string>
+	<string name="alarm_btn_close">Close</string>
+	<string name="alarm_btn_reset">Reset</string>
+	<string name="alarm_btn_back">Back</string>
+	<string name="alarm_btn_both_side">Cross both side</string>
+	<string name="alarm_btn_left_side">Cross left side</string>
+	<string name="alarm_btn_right_side">Cross right side</string>
+	<string name="alarm_status_get_fail">Failed to get alarm status</string>
+	<string name="alarm_status_set_fail">Failed to set alarm status</string>
+	<string name="alarm_broder_notset">Border alarm direction is not setted</string>
+	<string name="alarm_enter_alarm_open">Invade alarm is triggered</string>
+	<string name="alarm_enter_alarm_close">Invade alarm is closed</string>
+	<string name="alarm_pass_alarm_open">Cross alarm is triggered</string>
+	<string name="alarm_pass_alarm_close">Cross alarm is closed</string>
+	<string name="alarm_cover_alarm_open">Cover alarm is triggered</string>
+	<string name="alarm_cover_alarm_close">Cover alarm is closed</string>
+	<string name="alarm_popupwin_invas">Click four times in the defence area</string>
+	<string name="alarm_popupwin_iknow">I know</string>
+	<string name="emergency_devices">Linked devices</string>
+	<string name="emergency_devices_name_smoke">Smoke detector</string>
+
+</resources>
