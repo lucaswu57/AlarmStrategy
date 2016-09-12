@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="home_top_height">80dp</dimen>
+    <dimen name="home_top_height">120px</dimen>
     <dimen name="home_top_top_space">8dp</dimen>
     <dimen name="home_top_bottom_space">8dp</dimen>
-   <dimen name="home_top_left_space">50dp</dimen>
-    <dimen name="home_top_right_space">60dp</dimen>
+   <dimen name="home_top_left_space">90px</dimen>
+    <dimen name="home_top_right_space">90px</dimen>
     <dimen name="home_top_title_size">28sp</dimen>
     <dimen name="top_zigbee_size">18sp</dimen>
-    <dimen name="top_battery_width">45dp</dimen>
-    <dimen name="top_battery_height">18dp</dimen>
+    <dimen name="top_zigbee_num_text_size">15sp</dimen>
+    <dimen name="top_zigbee_num_size">20px</dimen>
+    <dimen name="top_battery_width">65px</dimen>
+    <dimen name="top_battery_height">27px</dimen>
+    <dimen name="top_wifi_width">35px</dimen>
+    <dimen name="top_wifi_height">35px</dimen>
     <dimen name="top_battery_font_size">18sp</dimen>
     <dimen name="top_time_size">18sp</dimen>
     <dimen name="zigbee_height">25dp</dimen>

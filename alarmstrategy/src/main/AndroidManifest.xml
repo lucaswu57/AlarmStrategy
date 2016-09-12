@@ -21,8 +21,8 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.SET_TIME" />
-    <!--系统对话框权限-->
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!-- 系统对话框权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
     <uses-feature
@@ -109,23 +109,29 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <!--开始录制和关闭录制广播（自由巡航应用中传过来的）-->
+                <!-- 开始录制和关闭录制广播（自由巡航应用中传过来的） -->
                 <action android:name="com.qihancloud.action.START_RECORD" />
                 <action android:name="com.qihancloud.action.STOP_RECORD" />
-                <!--开始拍照广播-->
+                <!-- 开始拍照广播 -->
                 <action android:name="com.qihancloud.action.START_CAPTURE" />
-                <!--陌生人识别广播（人脸识别应用传过来的）-->
-                <action android:name="com.qihancloud.hifis.action.STRANGER_INPUT"/>
-                <!--应急设备触发广播（智能圈应用传过来的）-->
-                <action android:name="com.qihancloud.zigbee.action.EMERGENCY_INPUT"/>
-                <!--系统广播：时间设置-->
-                <action android:name="android.intent.action.TIME_SET"/>
+                <!-- 陌生人识别广播（人脸识别应用传过来的） -->
+                <action android:name="com.qihancloud.hifis.action.STRANGER_INPUT" />
+                <!-- 应急设备触发广播（智能圈应用传过来的） -->
+                <action android:name="com.qihancloud.zigbee.action.EMERGENCY_INPUT" />
+                <!-- 系统广播：时间设置 -->
+                <action android:name="android.intent.action.TIME_SET" />
             </intent-filter>
         </receiver>
 
         <activity
             android:name=".AddMembersActivity"
-            android:theme="@android:style/Theme.NoTitleBar"></activity>
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name=".AddDevicesActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+
     </application>
 
 </manifest>

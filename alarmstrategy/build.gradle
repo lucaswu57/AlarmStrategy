@@ -8,8 +8,8 @@ android {
         applicationId "com.sunbo.idarling"
         minSdkVersion 17
         targetSdkVersion 21
-        versionCode 20160825
-        versionName "1.0.7"
+        versionCode 20160909
+        versionName "1.0.9"
 
         ndk {
             moduleName "AlarmApi"
@@ -55,4 +55,5 @@ dependencies {
     //toast开源框架
     //compile 'com.github.johnkil.android-appmsg:appmsg:1.2.0'
     compile 'junit:junit:4.12'
+    compile files('libs/picasso-2.4.0.jar')
 }

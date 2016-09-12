@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">安全家</string>
+
+    <string name="safe_home">安全家</string>
+    <string name="alalrm_strategy">布防策略</string>
+    <string name="stranger_strategy">陌生人策略</string>
+    <string name="emergency_strategy">应急策略</string>
+    <string name="safe_home_edit">编辑策略</string>
+    <string name="nothing"></string>
+    <string name="Login">登陆</string>
+    <string name="home_page_continued">未完待续，敬请期待...</string>
+
+    <string name="record_start">开始录制...</string>
+    <string name="record_stop">录制结束...</string>
+    <string name="record_photo">开始拍照</string>
+
+    <string name="add_members">添加成员</string>
+    <!--陌生人策略-->
+    <string name="stranger_alarm">陌生人进入！</string>
+
+
+    <!-- 布防策略-->
+
+    <string name="AlarmSetting">布防设置</string>
+    <string name="InvasionMode">入侵</string>
+    <string name="GuardMode">看护</string>
+    <string name="BroderMode">越界</string>
+    <string name="FocusMode">失焦模式</string>
+    <string name="CoverMode">遮挡</string>
+    <string name="NotCompleted">未绘制完成</string>
+    <string name="NotDraw">未绘制</string>
+    <string name="InvalidPoint">非法的点</string>
+    <string name="OpenCoverAlarm">开启</string>
+    <string name="CloseCoverAlarm">关闭</string>
+
+    <string name="alarm_confirm_tip">设置未保存，是否保存配置？</string>
+
+    <string name="setting_no">未设置</string>
+    <string name="setting_already">已设置</string>
+    <string name="setting_open">已开启</string>
+    <string name="setting_off">已关闭</string>
+
+    <string name="alarm_notify">拨打家庭成员视频通话</string>
+    <string name="alarm_take_photo">拍照存储</string>
+    <string name="alarm_record">视频录像存储</string>
+    <string name="alarm_whistle">警笛</string>
+    <string name="alarm_updating">正在升级中。。。</string>
+    <string name="alarm_updating1">高清摄像头正在升级中，部分功能暂停使用，为保证升级正常，请勿断电！</string>
+    <string name="alarm_update_fail">升级失败</string>
+    <string name="alarm_update_success">升级成功</string>
+
+
+    <string name="alarm_notify_text_top">请先添加成员</string>
+    <string name="alarm_notify_text_bottom">附：家里来了陌生人</string>
+    <string name="alarm_notify_gridview_textview">父亲</string>
+    <string name="alarm_notify_add">添加</string>
+    <string name="alarm_notify_added">已添加</string>
+    <string name="alarm_notify_not_add">未添加</string>
+
+    <string name="alarm_whistle_choose_defalut">默认</string>
+    <string name="alarm_whistle_choose_wave">警笛1</string>
+    <string name="alarm_whistle_choose_river">警笛2</string>
+    <string name="alarm_whistle_choose_local">从本地音乐选择</string>
+    <string name="alarm_whistle_choose_local_list">本地音乐列表</string>
+    <string name="alarm_whistle_choose_local_list_not_music">本地没有音乐！</string>
+
+    <string name="alarm_local">本地</string>
+    <string name="alarm_cloud">云服务器</string>
+    <string name="alarm_finish_btn">完成</string>
+
+    <string name="alarm_btn_open">开启</string>
+    <string name="alarm_btn_close">关闭</string>
+    <string name="alarm_btn_reset">重新</string>
+    <string name="alarm_btn_back">上一步</string>
+
+    <string name="alarm_btn_both_side">两侧越界</string>
+    <string name="alarm_btn_left_side">左侧越界</string>
+    <string name="alarm_btn_right_side">右侧越界</string>
+
+    <string name="alarm_status_get_fail">报警状态获取失败</string>
+    <string name="alarm_status_set_fail">报警状态设置失败</string>
+    <string name="alarm_broder_notset">越界报警方向未设置</string>
+
+    <!--报警提示-->
+    <string name="alarm_enter_alarm_open">入侵报警触发</string>
+    <string name="alarm_enter_alarm_close">入侵报警解除</string>
+    <string name="alarm_pass_alarm_open">越界报警触发</string>
+    <string name="alarm_pass_alarm_close">越界报警解除</string>
+    <string name="alarm_cover_alarm_open">遮挡报警触发</string>
+    <string name="alarm_cover_alarm_close">遮挡报警解除</string>
+
+
+    <string name="alarm_popupwin_invas">在所要安防区域点击四次即可</string>
+    <string name="alarm_popupwin_iknow">我知道了</string>
+
+
+    <!-- 应急策略 -->
+    <string name="emergency_devices">关联设备</string>
+    <string name="emergency_devices_name_smoke">烟感</string>
+    <string name="emergency_not_devices">暂时无可添加设备</string>
+
+    <!--错误信息-->
+
+</resources>

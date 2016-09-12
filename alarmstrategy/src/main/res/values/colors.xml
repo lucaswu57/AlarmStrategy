@@ -30,6 +30,24 @@
     <color name="item_bg_pressed">#707070</color>
 
 
+    <color name="alarm_check">#5fb4f5</color>
+    <color name="alarm_uncheck">#ffd2d2d2</color>
+
+    <!--  home page-->
+    <color name="home_page_name_textcolor_triggered">#6495ED</color>
+    <color name="home_page_name_textcolor_untriggered">#999999</color>
+
+    <color name="home_page_edit_textcolor">#5fb4f5</color>
+    <color name="home_page_edit_textcolor_untriggered">#c1c1c1</color>
+    <color name="home_page_edit_strokecolor">#5fb4f5</color>
+    <color name="home_page_edit_strokecolor_untriggered">#aaaaaa</color>
+
+    <!--emergency strategy-->
+    <color name="text_color_black">#333333</color>
+    <color name="listview_divider">#c8c8c8</color>
+    <!-- addmember-->
+    <color name="add_notadd_bg">#f2f2f2</color>
+
 
 
 
@@ -176,20 +194,8 @@
     <color name="navy">#000080</color> <!--海军色 -->
 
 
-    <color name="alarm_check">#5fb4f5</color> <!--海军色 -->
-    <color name="alarm_uncheck">#ffd2d2d2</color> <!--海军色 -->
 
-<!--  home page-->
-    <color name="home_page_name_textcolor_triggered">#6495ED</color>
-    <color name="home_page_name_textcolor_untriggered">#999999</color>
 
-    <color name="home_page_edit_textcolor">#5fb4f5</color>
-    <color name="home_page_edit_textcolor_untriggered">#c1c1c1</color>
-    <color name="home_page_edit_strokecolor">#5fb4f5</color>
-    <color name="home_page_edit_strokecolor_untriggered">#aaaaaa</color>
 
-    <!--emergency strategy-->
-    <color name="text_color_black">#333333</color>
-    <color name="listview_divider">#c8c8c8</color>
 
 </resources>

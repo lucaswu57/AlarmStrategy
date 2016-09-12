@@ -11,14 +11,23 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     tools:context="com.qihancloud.alarmstrategy.EmergencyConfigActivity">
 
-    <RelativeLayout
+
+    <ScrollView
+        android:id="@+id/scroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="@dimen/activity_line_toleft"
+        android:layout_marginRight="@dimen/activity_line_toright"
+        android:layout_marginTop="@dimen/emergency_divices_layout_margin_top"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+
+    <LinearLayout
         android:id="@+id/device_layout"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/emergency_divices_layout_margin_left"
-        android:layout_marginRight="@dimen/emergency_divices_layout_margin_right"
-        android:layout_marginTop="@dimen/emergency_divices_layout_margin_top"
-        android:layout_marginBottom="@dimen/emergency_divices_layout_margin_bottom"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         >
         <TextView
             android:id="@+id/device_textview"
@@ -27,32 +36,19 @@
             android:text="@string/emergency_devices"
             android:textSize="@dimen/emergency_devices_titlesize"
             android:textColor="@color/text_color_black"/>
-        <GridView
+        <com.qihancloud.alarmstrategy.view.MyGridView
             android:id="@+id/device_gridview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/device_textview"
-            android:numColumns="4">
-        </GridView>
-
-    </RelativeLayout>
-
-    <ScrollView
-        android:id="@+id/scroll_layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/device_layout"
-        android:layout_marginBottom="70dp"
-        android:layout_marginLeft="@dimen/activity_line_toleft"
-        android:layout_marginRight="@dimen/activity_line_toright"
-        android:scrollbars="none"
-        android:overScrollMode="never">
-
+            android:numColumns="4"
+            android:listSelector="@android:color/transparent">
+        </com.qihancloud.alarmstrategy.view.MyGridView>
 
         <LinearLayout
             android:id="@+id/other_layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <RelativeLayout
@@ -129,7 +125,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/activity_line_height"
-                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/notify_gridview"
                     android:background="@color/gray_light"></TextView>
 
             </RelativeLayout>
@@ -389,6 +385,7 @@
 
             </LinearLayout>
         </LinearLayout>
+    </LinearLayout>
     </ScrollView>
 
     <Button

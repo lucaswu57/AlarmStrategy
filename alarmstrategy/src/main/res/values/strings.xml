@@ -99,6 +99,8 @@
     <!-- 应急策略 -->
     <string name="emergency_devices">关联设备</string>
     <string name="emergency_devices_name_smoke">烟感</string>
+    <string name="emergency_not_devices">暂时无可添加设备</string>
+    <string name="emergency_to_devices">进入 智能圈</string>
 
     <!--错误信息-->
 

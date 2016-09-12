@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="400px"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginTop="32px"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24px"
+        android:textColor="@color/gray"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/emergency_divices_item_name_textsize"
+        android:layout_below="@id/item_image"/>
+
+    <ToggleButton
+        android:id="@+id/item_btn"
+        android:layout_width="@dimen/emergency_divices_item_switch_width"
+        android:layout_height="@dimen/emergency_divices_item_switch_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22px"
+        android:textOn="@string/alarm_notify_added"
+        android:textOff="@string/alarm_notify_add"
+        android:textSize="@dimen/emergency_divices_item_switch_textsize"
+        android:background="@drawable/btn_selector_devices_toggle"
+        android:textColor="@drawable/textcolor_check_white_blue"
+        android:layout_below="@id/item_text"
+        android:layout_marginBottom="22px"
+        />
+
+</RelativeLayout>

@@ -1,11 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">mylibrary</string>
+
     <string name="dialog_button_cancel">Cancel</string>
     <string name="dialog_button_confir">Confirm</string>
-    <string name="dialog_button_save">save</string>
-    <string name="logo_text2"></string>
-    <string name="AM">AM</string>
-    <string name="PM">PM</string>
-    <string name="error">error</string>
+    <string name="dialog_button_save">Save</string>
+     <string name="logo_text1">Sanbot</string>
+    <string name="logo_text2">Once you have a sustainable inheritance</string>
+    <string name="home_top_zigbee_text">ZIGBEE</string>
+    <string name="top_time_is_am">AM</string>
+    <string name="top_time_is_pm">PM</string>
+    <string name="battery_error">error</string>
+   <!-- <string name="security">安全性</string>
+    <string name="rssi">信号强度</string>
+    <string name="password">密码</string>
+    <string name="is_to_show_password">是否显示密码</string>-->
 </resources>

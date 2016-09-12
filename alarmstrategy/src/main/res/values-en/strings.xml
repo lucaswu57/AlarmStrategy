@@ -56,7 +56,7 @@
 	<string name="alarm_whistle_choose_local_list">Local music list</string>
 	<string name="alarm_whistle_choose_local_list_not_music">Local have not music!</string>
 	<string name="alarm_local">Local</string>
-	<string name="alarm_cloud">Cloud server</string>
+	<string name="alarm_cloud">Cloud</string>
 	<string name="alarm_finish_btn">Finish</string>
 	<string name="alarm_btn_open">Open</string>
 	<string name="alarm_btn_close">Close</string>
@@ -78,5 +78,6 @@
 	<string name="alarm_popupwin_iknow">I know</string>
 	<string name="emergency_devices">Linked devices</string>
 	<string name="emergency_devices_name_smoke">Smoke detector</string>
+	<string name="emergency_not_devices">Temporarily no add equipment</string>
 
 </resources>

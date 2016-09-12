@@ -14,12 +14,12 @@
 #include "avilib.h"
 #include "playlib.h"
 
-#define TAG "57"
+#define TAG "idarling_jni"
 #include <android/log.h>
 #define LOGD(...) __android_log_print(ANDROID_LOG_DEBUG,TAG ,__VA_ARGS__) // 定义LOGD类型
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO,TAG ,__VA_ARGS__) // 定义LOGI类型
 #define LOGW(...) __android_log_print(ANDROID_LOG_WARN,TAG ,__VA_ARGS__) // 定义LOGW类型
-#define LOGE(...) __android_log_print(ANDROID_LOG_ERROR,TAG ,__VA_ARGS__) // 定义LOGE类型
+#define LOGE(...) __android_log_print(ANDROID_LOG_ERROR,TAG ,__VA_ARGS__) // 定义LOGI类型
 #define LOGF(...) __android_log_print(ANDROID_LOG_FATAL,TAG ,__VA_ARGS__) // 定义LOGF类型
 
 #ifdef __cplusplus
@@ -162,7 +162,7 @@ JNIEXPORT jint JNICALL Java_com_qihancloud_alarmstrategy_AlarmApi_SetAlarm
 
            alarm_param_t alarmCfg;
            memset(&alarmCfg,0,sizeof(alarm_param_t));
-
+            LOGI("set");
            if((jint)type == 1)
            {
                alarmCfg.enable = (jint)status;
@@ -185,7 +185,7 @@ JNIEXPORT jint JNICALL Java_com_qihancloud_alarmstrategy_AlarmApi_SetAlarm
                jmethodID list_size = (*env)->GetMethodID(env,list_cls,"size","()I");
 
                int len =  (*env)->CallIntMethod(env,alarm_data,list_size);
-               LOGE("len = %d",len);
+               LOGI("len = %d",len);
 
                if(len>0)
                  alarmCfg.enable = 1;
@@ -313,7 +313,7 @@ JNIEXPORT jint JNICALL Java_com_qihancloud_alarmstrategy_AlarmApi_SetAlarm
 
                 if((jint)type == 3)
                     ret = alarmCfg.drt;
-                   LOGE("alarmCfg.drt = %d",ret);
+                   LOGI("alarmCfg.drt = %d",ret);
 
                  jobject cfgobj = (*env)->NewObject(env,cfg_cls,cfg_costruct,(jfloat)0,(jfloat)0,(jfloat)alarmCfg.left_up.x,(jfloat)alarmCfg.left_up.y,1);
 
@@ -463,19 +463,19 @@ JNIEXPORT jlong JNICALL Java_com_qihancloud_alarmstrategy_AlarmApi_StartVideo
        int fd;
        fd = open(PathName,02,0666);
        if(fd == -1){
-       LOGE("open faile");
+       LOGI("open faile");
        }
        int res = write(fd,_data,len);
        if(res!=len){
-         LOGE("write faile res=%d,len = %d",res,len);
+         LOGI("write faile res=%d,len = %d",res,len);
          }
-         LOGE("write success res=%d,len = %d",res,len);
+         LOGI("write success res=%d,len = %d",res,len);
        close(fd);
        */
 
        //jsize   strLen = env->GetArrayLength(data);
        char* _data= (char*)((*env)->GetByteArrayElements(env,data, NULL));
-        LOGE("update _size = %lld",size);
+        LOGI("update _size = %lld",size);
          int res = HD_UpdateIdarling(_size,_data,upgrade_callBack);
          (*env)->ReleaseByteArrayElements(env, data, _data, 0);
 
@@ -488,7 +488,7 @@ JNIEXPORT jlong JNICALL Java_com_qihancloud_alarmstrategy_AlarmApi_StartVideo
   void p2p_callBack(unsigned long handler,int command, char* param){
         JNIEnv *env = 0;
         if ((*g_jvm)->AttachCurrentThread(g_jvm, &env, NULL) != JNI_OK) {
-            LOGE("%s: AttachCurrentThread() failed", __FUNCTION__);
+            LOGI("%s: AttachCurrentThread() failed", __FUNCTION__);
             return;
         }
             jlong _handler = (jlong)handler;
@@ -499,7 +499,7 @@ JNIEXPORT jlong JNICALL Java_com_qihancloud_alarmstrategy_AlarmApi_StartVideo
             (*env)->CallVoidMethod(env, g_obj, java_p2p_callback,_handler,_command,_param);
 
       if ((*g_jvm)->DetachCurrentThread(g_jvm)!=JNI_OK) {
-          LOGE("%s: DetachCurrentThread() failed", __FUNCTION__);
+          LOGI("%s: DetachCurrentThread() failed", __FUNCTION__);
       }
 
     LOGI("handler:%lu, command:%d, param:%s \n", handler, command, param);
@@ -510,7 +510,7 @@ JNIEXPORT jlong JNICALL Java_com_qihancloud_alarmstrategy_AlarmApi_StartVideo
 
   JNIEnv *env = 0;
       if ((*g_jvm)->AttachCurrentThread(g_jvm, &env, NULL) != JNI_OK) {
-          LOGE("%s: AttachCurrentThread() failed", __FUNCTION__);
+          LOGI("%s: AttachCurrentThread() failed", __FUNCTION__);
           return;
       }
         jint _type=(jint)type;
@@ -527,14 +527,14 @@ JNIEXPORT jlong JNICALL Java_com_qihancloud_alarmstrategy_AlarmApi_StartVideo
 
 
         if ((*g_jvm)->DetachCurrentThread(g_jvm)!=JNI_OK) {
-                    LOGE("%s: DetachCurrentThread() failed", __FUNCTION__);
+                    LOGI("%s: DetachCurrentThread() failed", __FUNCTION__);
                 }
   }
 
 void streamCallback(unsigned long handler, void* data, int len ){
     JNIEnv *env = 0;
     if ((*g_jvm)->AttachCurrentThread(g_jvm, &env, NULL) != JNI_OK) {
-        LOGE("%s: AttachCurrentThread() failed", __FUNCTION__);
+        LOGI("%s: AttachCurrentThread() failed", __FUNCTION__);
         return;
     }
 
@@ -567,7 +567,7 @@ void streamCallback(unsigned long handler, void* data, int len ){
                 (*env)->SetByteArrayRegion(env,byteArray, 0, len-head_len, (jbyte*)data+head_len);
 
                 jmethodID java_stream_callback=(*env)->GetMethodID(env,native_proxy_cls,"StreamCallBack","(J[BIII)V");
-                // LOGE("frameInfo->width%d，frameInfo->height%d,frameInfo->len%d",frameInfo->width,frameInfo->height,len-head_len);
+                //LOGI("frameInfo->width%d，frameInfo->height%d,frameInfo->len%d,frameno->%d",frameInfo->width,frameInfo->height,len-head_len,frameInfo->no);
                 (*env)->CallVoidMethod(env, g_obj, java_stream_callback,_handler,byteArray,len-head_len,frameInfo->width,frameInfo->height);
                 (*env)->DeleteLocalRef(env,byteArray);
 
@@ -647,10 +647,10 @@ void streamCallback(unsigned long handler, void* data, int len ){
 
                     char* tempbuf = (char*)malloc(VIDEO_BUF_LEN);
                     memset(tempbuf, 0, VIDEO_BUF_LEN);
-                    LOGE("video_decode vd_handle =%ld,frameInfo->len = %d,frame_len = %d",vd_handle,frameInfo->len,frame_len);
+                    //LOGI("video_decode vd_handle =%ld,frameInfo->len = %d,frame_len = %d",vd_handle,frameInfo->len,frame_len);
                     //int video_decode(long vd_handle, uint8_t* in_264Buffer, int in_264BufferSize, uint8_t* out_RGB24Buffer, int* out_image_width, int* out_image_height,int* outsize)
                     int result = video_decode(vd_handle, (uint8_t*)data_temp+head_len,frameInfo->len,(uint8_t*)tempbuf,(int*)&frameInfo->width,(int*)&frameInfo->height,&Outsize);
-                    //LOGE("video_decode result =%d,tempbuf size = %s",result,tempbuf);
+                    //LOGI("video_decode result =%d,tempbuf size = %s",result,tempbuf);
 
                     if(result>=0)
                     {
@@ -662,7 +662,7 @@ void streamCallback(unsigned long handler, void* data, int len ){
                         (*env)->DeleteLocalRef(env,bufferArray);
                     }else
                     {
-                        LOGE("video_decode faile");
+                        LOGI("video_decode faile");
                     }
                     free(tempbuf);
            }
@@ -671,7 +671,7 @@ void streamCallback(unsigned long handler, void* data, int len ){
 
     step_end:
     if ((*g_jvm)->DetachCurrentThread(g_jvm)!=JNI_OK) {
-            LOGE("%s: DetachCurrentThread() failed", __FUNCTION__);
+            LOGI("%s: DetachCurrentThread() failed", __FUNCTION__);
         }
 }
 
@@ -725,7 +725,7 @@ JNIEXPORT jint JNICALL Java_com_qihancloud_alarmstrategy_AlarmApi_stopRecord
                   if(ret < 0)
                   LOGI("rename error");
               }else{
-                  LOGE("close error");
+                  LOGI("close error");
                }
           }else{
                res = -1;  //已经关闭录制，关闭录制失败
@@ -761,7 +761,7 @@ void stopRecord(){
            if(ret < 0)
            LOGI("rename error");
        }else{
-           LOGE("close error");
+           LOGI("close error");
         }
 
 }
@@ -770,7 +770,7 @@ int offline_callBack(int offline){
       JNIEnv *env = 0;
       if ((*g_jvm)->AttachCurrentThread(g_jvm, &env, NULL) != JNI_OK)
       {
-          LOGE("%s: AttachCurrentThread() failed", __FUNCTION__);
+          LOGI("%s: AttachCurrentThread() failed", __FUNCTION__);
           return;
       }
         jint _offline=(jint)offline;
@@ -780,14 +780,14 @@ int offline_callBack(int offline){
 
     if ((*g_jvm)->DetachCurrentThread(g_jvm)!=JNI_OK)
     {
-       LOGE("%s: DetachCurrentThread() failed", __FUNCTION__);
+       LOGI("%s: DetachCurrentThread() failed", __FUNCTION__);
     }
 }
 int upgrade_callBack(int send, int total){
       JNIEnv *env = 0;
       if ((*g_jvm)->AttachCurrentThread(g_jvm, &env, NULL) != JNI_OK)
       {
-          LOGE("%s: AttachCurrentThread() failed", __FUNCTION__);
+          LOGI("%s: AttachCurrentThread() failed", __FUNCTION__);
           return;
       }
         jint _send=(jint)send;
@@ -798,7 +798,7 @@ int upgrade_callBack(int send, int total){
 
     if ((*g_jvm)->DetachCurrentThread(g_jvm)!=JNI_OK)
     {
-       LOGE("%s: DetachCurrentThread() failed", __FUNCTION__);
+       LOGI("%s: DetachCurrentThread() failed", __FUNCTION__);
     }
 }
 

@@ -2,17 +2,16 @@
     <string name="app_name">mylibrary</string>
 
     <string name="dialog_button_cancel">取消</string>
-    <string name="dialog_button_confir">确认</string>
+    <string name="dialog_button_confir">确定</string>
     <string name="dialog_button_save">保存</string>
-    <string name="logo_text1">Sanbot</string>
+     <string name="logo_text1">Sanbot</string>
     <string name="logo_text2">一旦拥有 永续传承</string>
     <string name="home_top_zigbee_text">ZIGBEE</string>
-    <string name="AM">上午</string>
-    <string name="PM">下午</string>
-    <string name="error">错误</string>
-
-    <!-- <string name="security">安全性</string>
-     <string name="rssi">信号强度</string>
-     <string name="password">密码</string>
-     <string name="is_to_show_password">是否显示密码</string>-->
+    <string name="top_time_is_am">上午</string>
+    <string name="top_time_is_pm">下午</string>
+    <string name="battery_error">错误</string>
+   <!-- <string name="security">安全性</string>
+    <string name="rssi">信号强度</string>
+    <string name="password">密码</string>
+    <string name="is_to_show_password">是否显示密码</string>-->
 </resources>
